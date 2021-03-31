@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <h1 id="title">Formulário</h1>
+    <p id="description">Preencha corretamente todos os campos</p>
+    <div class="container">
+        <form id="survey-form">
+            <p><label id="name-label" for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+            </p>
+
+            <p><label id="email-label" for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </p>
+
+
+            <p><label id="number-label" for="">Idade</label>
+                <input type="number" name="" id="number" placeholder="Idade" min="10" max="99">
+            </p>
+
+            <p class="paragrafos">Qual a melhor opção descreve sua ocupação atual?</p>
+            <p><select name="role" id="dropdown" required>
+                    <option disabled selected value="">Selecione sua ocupação atual</option>
+                    <option value="student">Estudante</option>
+                    <option value="job">Trabalha em tempo integral</option>
+                    <option value="learner">Estuda em tempo integral</option>
+                    <option value="preferNo">Prefere não dizer</option>
+                    <option value="other">Outros</option>
+                </select></p>
+
+            <p class="p2">Qual o seu recurso favorito no freeCodeCamp?</p>
+            <p> <select name="mostLike" id="most-like" required>
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option value="challenges">Desafios</option>
+                    <option value="projects">Projetos</option>
+                    <option value="community">Comunidade</option>
+                    <option value="openSource">Código Aberto</option>
+                </select></p>
+
+
+            <p class="p3">Recomenda freeCodeCamp para um amigo?</p>
+            <label>
+                <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked>
+                Definitivamente
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" value="maybe" class="input-radio">Talvez
+            </label>
+            <label>
+                <input type="radio" name="user-recommend" value="noy-sure" class="input-radio">Não indico
+            </label>
+            <p class="p4">O que você gostaria de aprender?</p>
+            <p><span class="clue">(Marque quantas opções quiser)</span></p>
+
+            <p> <label>
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Projetos
+                    Front-end
+                </label></p>
+            <p> <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Projetos
+                    Back-end
+                </label></p>
+            <p><label>
+                    <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Visualização
+                    de
+                    dados
+                </label></p>
+            <p> <label>
+                    <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Desafios
+                </label></p>
+            <p> <label>
+                    <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Comunidade
+                    Código
+                    aberto
+                </label></p>
+            <p class="p5">Deixe aqui sua sugestão</p>
+            <p><textarea name="comment" id="comments" class="input-textarea"
+                    placeholder="Deixe sua sugestão aqui....."></textarea>
+
+                <button type="submit" id="submit" class="submit-button">Enviar</button>
+            </p>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
