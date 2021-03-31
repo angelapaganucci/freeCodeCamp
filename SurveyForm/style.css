@@ -5,18 +5,85 @@
 }
 
 #description {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     text-align: center;
 }
 
 #survey-form {
     position: relative;
-    background-color: blueviolet;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
 }
-#submit{
+
+#submit {
     display: flex;
-    
+}
+
+form {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(187, 185, 189, 0.425);
+    width: 500px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+textarea {
+    width: 490px;
+    height: 120px;
+    line-height: 20px;
+}
+
+#name{
+    width: 490px;
+}
+#email{
+    width: 490px;
+}
+
+#name-label{  
+    font-size: 20px; 
+}
+
+#email-label{
+    font-size: 20px;
+}
+
+#number-label{
+    font-size: 20px;
+}
+
+.paragrafos{
+    font-size: 20px;
+
+}
+
+.p2{
+    font-size: 20px;
+}
+
+.p3{
+    font-size: 20px;
+}
+
+.p4{
+    font-size: 20px;
+}
+ .clue{
+     font-style: italic;
+ }
+
+ .p5{
+    font-size: 20px;     
+ }
+
+ .submit-button{   
+    border-radius:5px 5px 5px 5px;    
+   
+}
+button{
+    align-items: center;
 }
